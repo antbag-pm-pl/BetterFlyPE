@@ -1,0 +1,15 @@
+name: FlyPE
+main: antbag\flype\Main
+api: 5.0.0
+author: antbag
+version: 0.0.9
+
+commands:
+  fly:
+    description: toggle fly
+    permission: fly.command.use
+    
+permissions:
+  fly.command.use:
+    description: perms to toggle fly
+    default: op
