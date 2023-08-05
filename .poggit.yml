@@ -5,4 +5,7 @@ branches:
 projects:
   BetterFlyPE:
     path: ""
+    lint:
+      phpstan: false
+    icon: 'fly.png'
 ...
