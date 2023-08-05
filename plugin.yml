@@ -7,9 +7,9 @@ version: 0.0.9
 commands:
   fly:
     description: toggle fly
-    permission: betterflype.command.use
+    permission: betterflype.command
     
 permissions:
-  betterflype.command.use:
+  betterflype.command:
     description: perms to toggle fly
     default: op
