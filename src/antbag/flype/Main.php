@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace antbag\flype;
+namespace antbag\betterflype;
 
 use pocketmine\plugin\PluginBase;
 use pocketmime\command\Command;
@@ -10,7 +10,10 @@ use pocketmime\command\CommandSender;
 use pocketmine\player\Player;
 
 class Main extends PluginBase {
-  
+
+  public function onEnable(): void {
+    $this->getServer()->getPluginManager()->registerEvents($this, $this);
+  }
   public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
     if(!$sender instanceof Player) {
       $sender->sendMessage("You must be a player to run this command");
