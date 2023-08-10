@@ -1,15 +1,15 @@
 name: BetterFlyPE
-main: antbag\flype\Main
+main: antbag\betterflype\Main
 api: 5.0.0
 author: antbag
-version: 0.0.9
+version: 2.0.0
 
 commands:
   fly:
     description: toggle fly
-    permission: flype.command
+    permission: betterflypecommand.use
     
 permissions:
-  flype.command:
+  betterflypecommand.use:
     description: perms to toggle fly
     default: op
